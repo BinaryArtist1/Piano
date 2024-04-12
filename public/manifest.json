@@ -1,0 +1,26 @@
+{
+  "short_name": "Piano Blocks App",
+  "name": "Piano Blocks App - Your Piano Visualizer/MidiPlayer/Assistant",
+  "icons": [
+    {
+      "src": "piano_icon.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "piano_icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "piano_icon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "orientation": "landscape",
+  "display": "standalone",
+  "theme_color": "#323232",
+  "background_color": "#323232"
+}

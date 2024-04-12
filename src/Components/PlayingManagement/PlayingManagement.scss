@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+$background : hsla(187, 100%, 12%, 0.953);
+$buttons_color : #FF7D00;
+
+.Playing_main{
+    width:70%;
+    left: 15%;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 54px;
+    background-color: $background;
+    position: absolute;
+    z-index: 200;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    transition: 0.25s ease;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -3px 6px black;
+    .icons{
+        height:100%;
+        display: flex;
+        box-sizing: border-box;
+        padding: 10px;
+        margin-left: 5px;
+        flex-direction: row;
+        align-items: center;
+        i{
+            font-size: 32px;
+            color:white;
+            margin:10px;
+        }
+        i:hover{
+            transition: 0.02s;
+            transform: scale(1.25);
+            text-shadow: 0px 0px 8px rgb(170, 40, 209);
+            cursor:pointer;
+        }
+        .IconGoBack{
+            cursor: pointer;
+            width:35px;
+            margin-left: -10px;
+            margin-right: 20px;
+        }
+    }
+    .Timer{
+        font-family: 'Quicksand', sans-serif;
+        display: block;
+        width:50px;
+        height:50px;
+        font-weight: 700;
+    }
+    .Duration{
+        width:75%;
+        justify-self: flex-end;
+        height:30%;
+        border:1px dotted rgb(255, 255, 255);
+        border-radius: 2px;
+        position: relative;
+        cursor:pointer;
+        .Bar{
+            position: absolute;
+            opacity: 0.9;
+            height:100%;
+            background: linear-gradient(90deg,rgb(66, 20, 151),rgb(143, 11, 136));
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .Playing_main{
+        .icons{
+            padding-left: 2px;
+            margin-left: 0px;
+            i{
+                font-size: 22px;
+                margin: 4px;
+            }
+            .IconGoBack{
+                width:28px;
+                margin-right: 4px;
+            }
+        }
+        .Duration{
+            width:60%;
+        }
+    }
+}
